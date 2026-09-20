@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "Expense Tracker Pro",
+  "short_name": "ExpensePro",
+  "description": "Cross-platform mobile personal finance and expense tracking app with role-based access, budgets, analytics, receipts, and offline support.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#10b981",
+  "background_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

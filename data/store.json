@@ -1,0 +1,641 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Admin Demo",
+      "email": "admin@demo.com",
+      "password_hash": "$2b$10$5tc88wE0D1OXFZ2Ga.07juC1hL.rn4mS6RsK0nsn9gARpKE6y9hM2",
+      "role": "admin",
+      "currency": "INR",
+      "theme": "system",
+      "monthly_budget": 60000,
+      "is_active": true,
+      "created_at": "2026-06-22T06:39:03.237Z",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "usr-user-1",
+      "name": "Demo User",
+      "email": "user@demo.com",
+      "password_hash": "$2b$10$5tc88wE0D1OXFZ2Ga.07juQ2f/c.rhXRemTp9FyfMapQhU58lG2Oq",
+      "role": "user",
+      "currency": "INR",
+      "theme": "system",
+      "monthly_budget": 50000,
+      "is_active": true,
+      "created_at": "2026-06-22T06:39:03.237Z",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "usr-1789886841251-l095h",
+      "name": "Test Mobile User",
+      "email": "testmobile@example.com",
+      "password_hash": "$2b$10$RgcgaVq0MsJy9sr6kq7NGus4y0uqyr1XIt14AsZrPLXUc.2jBLPlW",
+      "role": "user",
+      "currency": "USD",
+      "theme": "system",
+      "monthly_budget": 2500,
+      "is_active": true,
+      "created_at": "2026-09-20T06:47:21.251Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Food & Dining",
+      "icon": "🍔",
+      "color": "#f97316",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.042Z"
+    },
+    {
+      "id": "cat-2",
+      "name": "Groceries",
+      "icon": "🛒",
+      "color": "#10b981",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-3",
+      "name": "Shopping",
+      "icon": "🛍️",
+      "color": "#ec4899",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-4",
+      "name": "Transportation",
+      "icon": "🚗",
+      "color": "#3b82f6",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-5",
+      "name": "Housing & Rent",
+      "icon": "🏠",
+      "color": "#8b5cf6",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-6",
+      "name": "Bills & Utilities",
+      "icon": "💡",
+      "color": "#eab308",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-7",
+      "name": "Entertainment",
+      "icon": "🎬",
+      "color": "#06b6d4",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-8",
+      "name": "Health & Wellness",
+      "icon": "💊",
+      "color": "#ef4444",
+      "type": "expense",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-9",
+      "name": "Salary",
+      "icon": "💼",
+      "color": "#10b981",
+      "type": "income",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-10",
+      "name": "Freelance & Projects",
+      "icon": "💻",
+      "color": "#6366f1",
+      "type": "income",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-11",
+      "name": "Investments",
+      "icon": "📈",
+      "color": "#14b8a6",
+      "type": "both",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    },
+    {
+      "id": "cat-12",
+      "name": "Gifts & Others",
+      "icon": "🎁",
+      "color": "#f43f5e",
+      "type": "both",
+      "user_id": null,
+      "created_at": "2026-09-20T06:39:03.043Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx-seed-33",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 3200,
+      "category_id": "cat-11",
+      "description": "Quarterly Mutual Fund Dividend",
+      "date": "2026-09-22",
+      "currency": "INR",
+      "created_at": "2026-09-23T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-32",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 850,
+      "category_id": "cat-8",
+      "description": "Vitamins and Pharmacy",
+      "date": "2026-09-20",
+      "currency": "INR",
+      "created_at": "2026-09-21T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-31",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 3500,
+      "category_id": "cat-3",
+      "description": "Running Shoes & Sports Wear",
+      "date": "2026-09-18",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-09-19T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-30",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 999,
+      "category_id": "cat-7",
+      "description": "OTT Streaming Subscriptions",
+      "date": "2026-09-16",
+      "currency": "INR",
+      "created_at": "2026-09-17T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-29",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 3100,
+      "category_id": "cat-6",
+      "description": "High-speed Fiber & Electricity Bill",
+      "date": "2026-09-14",
+      "currency": "INR",
+      "created_at": "2026-09-15T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-28",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 2400,
+      "category_id": "cat-4",
+      "description": "Fuel & Metro Smartcard Reload",
+      "date": "2026-09-12",
+      "currency": "INR",
+      "created_at": "2026-09-13T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-27",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 1250,
+      "category_id": "cat-1",
+      "description": "Weekend Bistro Lunch",
+      "date": "2026-09-10",
+      "currency": "INR",
+      "created_at": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-26",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 4800,
+      "category_id": "cat-2",
+      "description": "Organic Supermarket Run",
+      "date": "2026-09-08",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-09-09T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-25",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 18000,
+      "category_id": "cat-5",
+      "description": "Apartment Monthly Rent",
+      "date": "2026-09-06",
+      "currency": "INR",
+      "created_at": "2026-09-07T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-24",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 15000,
+      "category_id": "cat-10",
+      "description": "Mobile UI Consulting Project",
+      "date": "2026-09-04",
+      "currency": "INR",
+      "created_at": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-23",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 75000,
+      "category_id": "cat-9",
+      "description": "Monthly Salary Credit",
+      "date": "2026-09-02",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-22",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 3200,
+      "category_id": "cat-11",
+      "description": "Quarterly Mutual Fund Dividend",
+      "date": "2026-08-22",
+      "currency": "INR",
+      "created_at": "2026-08-23T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-21",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 850,
+      "category_id": "cat-8",
+      "description": "Vitamins and Pharmacy",
+      "date": "2026-08-20",
+      "currency": "INR",
+      "created_at": "2026-08-21T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-20",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 3500,
+      "category_id": "cat-3",
+      "description": "Running Shoes & Sports Wear",
+      "date": "2026-08-18",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-19",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 999,
+      "category_id": "cat-7",
+      "description": "OTT Streaming Subscriptions",
+      "date": "2026-08-16",
+      "currency": "INR",
+      "created_at": "2026-08-17T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-18",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 3100,
+      "category_id": "cat-6",
+      "description": "High-speed Fiber & Electricity Bill",
+      "date": "2026-08-14",
+      "currency": "INR",
+      "created_at": "2026-08-15T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-17",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 2400,
+      "category_id": "cat-4",
+      "description": "Fuel & Metro Smartcard Reload",
+      "date": "2026-08-12",
+      "currency": "INR",
+      "created_at": "2026-08-13T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-16",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 1250,
+      "category_id": "cat-1",
+      "description": "Weekend Bistro Lunch",
+      "date": "2026-08-10",
+      "currency": "INR",
+      "created_at": "2026-08-11T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-15",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 4800,
+      "category_id": "cat-2",
+      "description": "Organic Supermarket Run",
+      "date": "2026-08-08",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-08-09T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-14",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 18000,
+      "category_id": "cat-5",
+      "description": "Apartment Monthly Rent",
+      "date": "2026-08-06",
+      "currency": "INR",
+      "created_at": "2026-08-07T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-13",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 15000,
+      "category_id": "cat-10",
+      "description": "Mobile UI Consulting Project",
+      "date": "2026-08-04",
+      "currency": "INR",
+      "created_at": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-12",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 75000,
+      "category_id": "cat-9",
+      "description": "Monthly Salary Credit",
+      "date": "2026-08-02",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-08-03T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-11",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 3200,
+      "category_id": "cat-11",
+      "description": "Quarterly Mutual Fund Dividend",
+      "date": "2026-07-22",
+      "currency": "INR",
+      "created_at": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-10",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 850,
+      "category_id": "cat-8",
+      "description": "Vitamins and Pharmacy",
+      "date": "2026-07-20",
+      "currency": "INR",
+      "created_at": "2026-07-21T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-9",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 3500,
+      "category_id": "cat-3",
+      "description": "Running Shoes & Sports Wear",
+      "date": "2026-07-18",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-07-19T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-8",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 999,
+      "category_id": "cat-7",
+      "description": "OTT Streaming Subscriptions",
+      "date": "2026-07-16",
+      "currency": "INR",
+      "created_at": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-7",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 3100,
+      "category_id": "cat-6",
+      "description": "High-speed Fiber & Electricity Bill",
+      "date": "2026-07-14",
+      "currency": "INR",
+      "created_at": "2026-07-15T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-6",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 2400,
+      "category_id": "cat-4",
+      "description": "Fuel & Metro Smartcard Reload",
+      "date": "2026-07-12",
+      "currency": "INR",
+      "created_at": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-5",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 1250,
+      "category_id": "cat-1",
+      "description": "Weekend Bistro Lunch",
+      "date": "2026-07-10",
+      "currency": "INR",
+      "created_at": "2026-07-11T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-4",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 4800,
+      "category_id": "cat-2",
+      "description": "Organic Supermarket Run",
+      "date": "2026-07-08",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-3",
+      "user_id": "usr-user-1",
+      "type": "expense",
+      "amount": 18000,
+      "category_id": "cat-5",
+      "description": "Apartment Monthly Rent",
+      "date": "2026-07-06",
+      "currency": "INR",
+      "created_at": "2026-07-07T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-2",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 15000,
+      "category_id": "cat-10",
+      "description": "Mobile UI Consulting Project",
+      "date": "2026-07-04",
+      "currency": "INR",
+      "created_at": "2026-07-05T00:00:00.000Z"
+    },
+    {
+      "id": "tx-seed-1",
+      "user_id": "usr-user-1",
+      "type": "income",
+      "amount": 75000,
+      "category_id": "cat-9",
+      "description": "Monthly Salary Credit",
+      "date": "2026-07-02",
+      "currency": "INR",
+      "receipt": "https://images.unsplash.com/photo-1554415707-9e49667ff0d7?w=600&auto=format&fit=crop&q=80",
+      "created_at": "2026-07-03T00:00:00.000Z"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "bgt-1",
+      "user_id": "usr-user-1",
+      "month": 9,
+      "year": 2026,
+      "amount": 50000
+    },
+    {
+      "id": "bgt-2",
+      "user_id": "usr-user-1",
+      "month": 8,
+      "year": 2026,
+      "amount": 45000
+    },
+    {
+      "id": "bgt-3",
+      "user_id": "usr-user-1",
+      "month": 7,
+      "year": 2026,
+      "amount": 45000
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1789886846717-23pb",
+      "user_id": "usr-user-1",
+      "message": "⚠️ Budget Warning: You have reached 78% of your monthly budget (₹35,029 / ₹45,000).",
+      "type": "warning",
+      "is_read": false,
+      "created_at": "2026-09-20T06:47:26.717Z"
+    },
+    {
+      "id": "notif-1789886846702-7umc",
+      "user_id": "usr-user-1",
+      "message": "⚠️ Budget Warning: You have reached 78% of your monthly budget (₹35,024.5 / ₹45,000).",
+      "type": "warning",
+      "is_read": false,
+      "created_at": "2026-09-20T06:47:26.712Z"
+    },
+    {
+      "id": "notif-1",
+      "user_id": "usr-user-1",
+      "message": "Welcome to Expense Tracker Pro! Your monthly budget is configured to ₹45,000.",
+      "type": "info",
+      "is_read": false,
+      "created_at": "2026-09-20T06:39:03.238Z"
+    },
+    {
+      "id": "notif-2",
+      "user_id": "usr-user-1",
+      "message": "Heads up: You have utilized 78% of your monthly budget for Groceries and Rent.",
+      "type": "warning",
+      "is_read": false,
+      "created_at": "2026-09-19T06:39:03.238Z"
+    },
+    {
+      "id": "notif-3",
+      "user_id": "usr-user-1",
+      "message": "Great job! Income has exceeded your target savings goals this quarter.",
+      "type": "success",
+      "is_read": true,
+      "created_at": "2026-09-17T06:39:03.238Z"
+    },
+    {
+      "id": "notif-1789886841251",
+      "user_id": "usr-1789886841251-l095h",
+      "message": "Welcome Test Mobile User! Start by logging your first expense or customizing your categories.",
+      "type": "info",
+      "is_read": false,
+      "created_at": "2026-09-20T06:47:21.252Z"
+    }
+  ],
+  "activity_log": [
+    {
+      "id": "act-1789886846723",
+      "user_id": "usr-user-1",
+      "user_name": "Demo User",
+      "action": "Deleted transaction \"Mobile test dinner updated\"",
+      "time": "2026-09-20T06:47:26.723Z",
+      "amount": 130
+    },
+    {
+      "id": "act-1789886846712",
+      "user_id": "usr-user-1",
+      "user_name": "Demo User",
+      "action": "Added expense \"Mobile test dinner\"",
+      "time": "2026-09-20T06:47:26.712Z",
+      "amount": 125.5,
+      "type": "expense"
+    },
+    {
+      "id": "act-1",
+      "user_id": "usr-user-1",
+      "user_name": "Demo User",
+      "action": "Added transaction \"Monthly Salary Credit\"",
+      "time": "2026-09-20T06:39:03.238Z",
+      "amount": 75000,
+      "type": "income"
+    },
+    {
+      "id": "act-2",
+      "user_id": "usr-user-1",
+      "user_name": "Demo User",
+      "action": "Set monthly budget to ₹45,000",
+      "time": "2026-09-18T06:39:03.238Z"
+    },
+    {
+      "id": "act-3",
+      "user_id": "usr-admin-1",
+      "user_name": "Admin Demo",
+      "action": "System initialized and seeded 12 global categories",
+      "time": "2026-09-17T06:39:03.238Z"
+    }
+  ]
+}

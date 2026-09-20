@@ -1,0 +1,10 @@
+{
+  "name": "Expense Tracker Pro",
+  "description": "Cross-platform mobile personal finance and expense tracking app with role-based access, budgets, analytics, receipts, and offline support.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
